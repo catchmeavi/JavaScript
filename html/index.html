@@ -12,7 +12,24 @@
     var stale = ["Emil", "Tobias", "Linus"];<br />
     var children = hege.concat(stale);<br />
     <button onclick="concatArray();">Concat</button>
-    <br />
+    <br /><br />
     <div id="resut"></div>
+    <br />
+    <h1>Spread Operator</h1>
+    vconst person = { name: 'David Walsh', gender: 'Male' };<br />
+    const tools = { computer: 'Mac', editor: 'Atom' };<br />
+
+    const summary = {...person, ...tools};<br />
+    <button onclick="getSummery();">Merge</button>
+    <br /><br />
+    <div id="resut1"></div>
+    <br />
+    <h2>With the previous example</h2><br />
+    var hege = ["Cecilie", "Lone"];<br />
+    var stale = ["Emil", "Tobias", "Linus"];<br />
+    var children = [...hege,...stale ]<br />
+    <button onclick="concatArraySpread();">Concat With Spread</button>
+    <br /><br />
+    <div id="resut3"></div>
 
 </html>
